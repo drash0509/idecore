@@ -7,6 +7,7 @@ import ProductForm from './SellerDashBoard/Screens/AddProduct/ProductFrom/Produc
 import MainScreen from './MainDashboard/MainScreen'
 import RouteMainFile from './Mainroute/RouteMainFile'
 import SellerMain from './SellerDashBoard/SellerMain'
+import SearchBar from './MainDashboard/Components/SearchBar'
 const App = () => {
   return (
     <div style={{flex:1}}>

@@ -6,6 +6,8 @@ import favfilled from '../images/navfavfilled.png';
 import profile from '../images/profile.png';
 import cart from '../images/cart.png';
 import cartfilled from '../images/cartfilled.png';
+import Searchbar from './Searchbar';
+
 
 export default function Navbar() {
   const navigate = useNavigate();
@@ -120,6 +122,8 @@ setIsDropdownOpen(!isDropdownOpen);
               </li>
             </ul>
           </div>
+          <Searchbar/>
+          
           <button className="nav-link" style={{ background: 'none', border: 'none', outline: 'none' }} onClick={handleCartClick}>
             <img src={isCartClicked ? cartfilled : cart} alt="Cart" style={{ height: '3.5vh', width: 'auto', resize: 'contain' }} />
           </button>

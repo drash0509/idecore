@@ -15,8 +15,7 @@ export default function Navbar() {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary" style={{ padding: "0",  position: "fixed",zIndex:'1000',flex:1
-}}>
+      <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid" style={{ backgroundColor: 'rgba(73,47,29,1)', width: '100vw' }}>
           <a className="navbar-brand" href="/">
             <img src={logo} alt="Logo" style={{ height: '4vw', width: '4vw', resize: "contain", borderRadius: '7px', border: '2px solid #49372B' }} />
@@ -30,7 +29,7 @@ export default function Navbar() {
                 <Link className={`nav-link ${isActive('/SellerDashboard/AddProduct') ? 'active' : ''}`} aria-current="page" to="/SellerDashboard/AddProduct">Add Products</Link>
               </li>
               <li className="nav-item">
-                <Link className={`nav-link ${isActive('/SellerDashboard/Home') ? 'active' : ''}`} aria-current="page" to="/SellerDashboard/Home">Home</Link>
+                <Link className={`nav-link ${isActive('/SellerDashboard/ProductData') ? 'active' : ''}`} aria-current="page" to="/SellerDashboard/ProductData">ProductData</Link>
               </li>
           
             </ul>
